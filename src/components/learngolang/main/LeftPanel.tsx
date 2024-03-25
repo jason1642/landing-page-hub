@@ -9,19 +9,24 @@ const Container = styled.div`
   flex-direction: column;
   line-height: 2.5rem;
   font-size: 1.5rem;
- 
+  width: 50%;
+
 `;
 
 const LeftPanel: React.FunctionComponent<ILeftPanelProps> = (props) => {
   return (
     <Container>
 
-        <p>Learn to build real, <span className='text-yellow-400'>production-grade</span> web applications from scratch.</p>
+        <p>Learn to build <span className='text-yellow-400'>real, production-grade</span> web applications from scratch.</p>
 
-        <p>👉 No trivial TODO apps that barely touch the complexity of a real app.</p>
+        <p className='mt-5'>👉 No trivial TODO apps that barely touch the complexity of a real app.</p>
         <p>👉 No frameworks that hide all the details</p>
 
-        <p>in this course we build and deploy a photo sharing application complete with users, authentication image uploads, a database, and more. We even deploy to a production server and set up automatic HTTPS.</p>
+        <p className='leading-8 mt-5'>
+            in this course we build and deploy a photo sharing application complete 
+            with <span className='border-b-amber-300 border-b-[2px] border-dotted '>users</span>
+            , <span className='border-b-amber-300 border-b-[2px] border-dotted '>authentication,</span> <span className='border-b-amber-300 border-b-[2px] border-dotted '>image uploads,</span>, a <span className='border-b-amber-300 border-b-[2px] border-dotted '>database</span>, and more. We even deploy to a production server and set up automatic HTTPS.
+            </p>
     </Container>
   );
 };

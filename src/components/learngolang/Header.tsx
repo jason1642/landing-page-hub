@@ -6,7 +6,8 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 2.5rem;
-  margin-top: 1rem;
+  padding-top: 1.5rem;
+  /* margin-top: 1rem; */
   background-color: #111827;
 `;
 
@@ -21,6 +22,9 @@ const UpdatesButton = styled.div`
   line-height: 1.5rem;
   padding: 0.5rem 1rem;
   border: 1px solid #374151;
+  color: #d1d5db;
+  border-radius: 5px;
+
 `;
 const LoginButton = styled.div`
   display:flex;
@@ -30,6 +34,7 @@ const LoginButton = styled.div`
   background-color: #374151;
   border-radius: 5px;
   margin-left: 1.3rem;
+  font-weight: 500;
 `;
 const Wrapper = styled.div`
   display:flex;
