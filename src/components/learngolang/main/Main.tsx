@@ -5,7 +5,7 @@ import RightPanel from './RightPanel';
 interface IMainProps {
 }
 
-const Container = styled.div`
+const Container = styled.section`
   display:flex;
   background-color: #111827;
   padding: 0 2.5rem;
@@ -37,14 +37,18 @@ const ButtonTray = styled.div`
   color: #e8e6e3;
   font-weight: 500;
   font-size: 1rem;
+  padding-top: 4rem;
 `;
 const SampleButton = styled.div`
-  background-color: #586064;
+  background-color: #6b7280;
   padding: 1rem;
+  border-radius: 5px;
 `;
 const PurchaseButton = styled.div`
 background-color: #2131a5;
   padding: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
 `;
 
 const Main: React.FunctionComponent<IMainProps> = (props) => {
@@ -67,7 +71,7 @@ const Main: React.FunctionComponent<IMainProps> = (props) => {
 
 <ButtonTray>
     <SampleButton>{`I'd like a sample`}</SampleButton>
-    <PurchaseButton>{`I'd like to purchase`}</PurchaseButton>
+    <PurchaseButton>{`I'm ready to purchase`}</PurchaseButton>
 </ButtonTray>
     </Container>
   );
