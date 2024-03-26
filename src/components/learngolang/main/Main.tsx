@@ -34,6 +34,17 @@ const Wrapper = styled.div`
 
 const ButtonTray = styled.div`
   display: flex;
+  color: #e8e6e3;
+  font-weight: 500;
+  font-size: 1rem;
+`;
+const SampleButton = styled.div`
+  background-color: #586064;
+  padding: 1rem;
+`;
+const PurchaseButton = styled.div`
+background-color: #2131a5;
+  padding: 1rem;
 `;
 
 const Main: React.FunctionComponent<IMainProps> = (props) => {
@@ -55,7 +66,8 @@ const Main: React.FunctionComponent<IMainProps> = (props) => {
 
 
 <ButtonTray>
-  Id like a sample
+    <SampleButton>{`I'd like a sample`}</SampleButton>
+    <PurchaseButton>{`I'd like to purchase`}</PurchaseButton>
 </ButtonTray>
     </Container>
   );
