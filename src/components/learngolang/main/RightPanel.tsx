@@ -30,7 +30,7 @@ const RightPanel: React.FunctionComponent<IRightPanelProps> = (props) => {
    height="500" 
     typeof="video/mp4"
   //  controls
-  //  frameborder='0'
+  //  frameborder='0' .lg\:max-w-prose
    />
     </Container>
   );

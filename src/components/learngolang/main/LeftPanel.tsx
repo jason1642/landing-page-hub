@@ -26,7 +26,7 @@ const LeftPanel: React.FunctionComponent<ILeftPanelProps> = (props) => {
         <p className='leading-8 mt-5'>
             in this course we build and deploy a photo sharing application complete 
             with <span className='border-b-amber-300 border-b-[2px] border-dotted '>users</span>
-            , <span className='border-b-amber-300 border-b-[2px] border-dotted '>authentication,</span> <span className='border-b-amber-300 border-b-[2px] border-dotted '>image uploads,</span>, a <span className='border-b-amber-300 border-b-[2px] border-dotted '>database</span>, and more. We even deploy to a production server and set up automatic HTTPS.
+            , <span className='border-b-amber-300 border-b-[2px] border-dotted '>authentication</span>, <span className='border-b-amber-300 border-b-[2px] border-dotted '>image uploads</span>, a <span className='border-b-amber-300 border-b-[2px] border-dotted '>database</span>, and more. We even deploy to a production server and set up automatic HTTPS.
             </p>
     </Container>
   );
