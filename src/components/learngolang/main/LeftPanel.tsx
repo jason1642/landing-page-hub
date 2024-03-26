@@ -5,11 +5,12 @@ interface ILeftPanelProps {
 }
 
 const Container = styled.div`
-  display:flex;
-  flex-direction: column;
+  /* display:flex; */
+  grid-column: 1 / 3;
+  /* flex-direction: column; */
   line-height: 2.5rem;
   font-size: 1.5rem;
-  width: 50%;
+  /* width: 50%; */
 
 `;
 

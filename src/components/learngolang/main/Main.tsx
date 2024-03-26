@@ -22,11 +22,13 @@ const Heading = styled.h2`
 
 `;
 const Wrapper = styled.div`
-  display:flex;
-  flex-direction: row;
-  flex-basis: 1 1;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* flex-direction: row; */
+  /* flex-basis: 1 1; */
   @media (max-width: 1050px) {
-      flex-direction: column;
+      /* flex-direction: column; */
     }  
 `;
 

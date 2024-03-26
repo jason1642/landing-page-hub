@@ -6,12 +6,17 @@ interface IRightPanelProps {
 }
 
 const Container = styled.div`
-  display:flex;
-  width: 50%;
+  /* display:flex; */
+  grid-column: 3 / 5;
+  /* tab-size: 4; */
+  height: 100%;
+
 `;
 
-const Video = styled.video`
+const Video = styled.iframe`
   /* display:flex; */
+  width: 100%;
+  height: 100%;
 `;
 
 const RightPanel: React.FunctionComponent<IRightPanelProps> = (props) => {
@@ -24,7 +29,8 @@ const RightPanel: React.FunctionComponent<IRightPanelProps> = (props) => {
   width="750"
    height="500" 
     typeof="video/mp4"
-   controls
+  //  controls
+  //  frameborder='0'
    />
     </Container>
   );
