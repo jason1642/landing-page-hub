@@ -11,6 +11,7 @@ const Container = styled.div`
   line-height: 2.5rem;
   font-size: 1.5rem;
   /* width: 50%; */
+  color: #e5e7eb;
 
 `;
 

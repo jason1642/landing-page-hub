@@ -1,6 +1,8 @@
 'use client'
 import * as React from 'react';
 import styled from 'styled-components';
+import gologo from '../../../images/gointroimage.svg'
+import Image from 'next/image';
 interface IIntroProps {
 }
 
@@ -23,8 +25,23 @@ const Intro: React.FunctionComponent<IIntroProps> = (props) => {
   return (
     <Container>
         <Paragraph>{"I can't tell you the number of times I heard this when learning to build my first web app in Go. After a while, it started to haunt me. It isn't that this advice is incorrect; it just isn't that helpful by itself."}</Paragraph>
-        <Paragraph>{`It felt like someone was telling me, "You can build a house, all you need is a hardware store!" And I kept hearing it over and over again.`}</Paragraph>
+
+<div style={{display:'flex', width: '100%'}}>
+       
+
+    <div style={{display:'flex', flexDirection: 'column',}}>
+                <Paragraph>{`It felt like someone was telling me, "You can build a house, all you need is a hardware store!" And I kept hearing it over and over again.`}</Paragraph>
         <Paragraph>{`While this advice is mostly true - you absolutely can build a web app in Go using nothing but the standard library - it wasn't helpful. It didn't get me any closer to building a real application. I was still left with questions like:`}</Paragraph>
+    </div>
+
+    <Image 
+            src={gologo}
+            alt='gobuddy'
+            style={{height: '8rem', width: '8rem', float: 'right', display: 'block'}}
+
+        />
+</div>
+     
     </Container>
   );
 };
