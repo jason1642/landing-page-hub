@@ -7,7 +7,8 @@ interface IPageProps {
 }
 
 const Container = styled.div`
-  
+    background-color: #111827;
+
 `;
 
 const Page: React.FunctionComponent<IPageProps> = (props) => {

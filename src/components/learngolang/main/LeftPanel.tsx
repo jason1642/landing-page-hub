@@ -18,8 +18,7 @@ const Container = styled.div`
 const LeftPanel: React.FunctionComponent<ILeftPanelProps> = (props) => {
   return (
     <Container>
-
-        <p>Learn to build <span className='text-yellow-400'>real, production-grade</span> web applications from scratch.</p>
+    <p>Learn to build <span className='text-yellow-400'>real, production-grade</span> web applications from scratch.</p>
 
         <p className='mt-5'>👉 No trivial TODO apps that barely touch the complexity of a real app.</p>
         <p>👉 No frameworks that hide all the details</p>

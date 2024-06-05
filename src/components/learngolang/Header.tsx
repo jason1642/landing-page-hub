@@ -9,6 +9,8 @@ const Container = styled.header`
   padding: 0 2.5rem;
   padding-top: 1.5rem;
   /* margin-top: 1rem; */
+  margin: 0 auto;
+  max-width: 80rem;
   background-color: #111827;
 `;
 

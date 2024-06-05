@@ -11,20 +11,24 @@ const Container = styled.section`
   background-color: #111827;
   padding: 0 2.5rem;
   flex-direction: column;
+  max-width: 80rem;
   padding-bottom: 6rem;
+  align-items: center;
+  margin: 0 auto;
 `;
 
 const Heading = styled.h2`
   /* display:flex; */
   font-size: 4.5rem;
   margin-top: 1rem;
+  align-self: flex-start;
   font-weight: 800;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 `;
 const Wrapper = styled.div`
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   /* flex-direction: row; */
   /* flex-basis: 1 1; */

@@ -6,7 +6,12 @@ interface IprojectDirectoryLayoutProps {
 }
 const ChallengesLayout: React.FunctionComponent<IprojectDirectoryLayoutProps> = ({children}) => {
   return (
-    <section>
+    <section 
+    style={{
+      backgroundColor: "#111827"
+
+    }}
+    >
         <Header/>
 
         {children}
