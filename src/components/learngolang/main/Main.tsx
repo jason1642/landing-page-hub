@@ -43,6 +43,8 @@ const ButtonTray = styled.div`
   font-weight: 500;
   font-size: 1rem;
   padding-top: 4rem;
+  width: 100%;
+  justify-content: left;
 `;
 const SampleButton = styled.div`
   background-color: #6b7280;
@@ -51,6 +53,7 @@ const SampleButton = styled.div`
 `;
 const PurchaseButton = styled.div`
 background-color: #2131a5;
+
   padding: 1rem;
   margin-left: 1rem;
   border-radius: 5px;
@@ -76,7 +79,9 @@ const Main: React.FunctionComponent<IMainProps> = (props) => {
 
 <ButtonTray>
     <SampleButton>{`I'd like a sample`}</SampleButton>
-    <PurchaseButton>{`I'm ready to purchase`}</PurchaseButton>
+    <PurchaseButton
+    className=" text-white bg-gradient-to-r from-[#3b82f6] to-[#7c3aed] "
+    >{`I'm ready to purchase`}</PurchaseButton>
 </ButtonTray>
     </Container>
   );
