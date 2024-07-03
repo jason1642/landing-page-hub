@@ -1,21 +1,25 @@
-'use client'
+
 import Header from "@/components/learngolang/Header";
 
 interface IprojectDirectoryLayoutProps {
     children: React.ReactNode;
 }
 const ChallengesLayout: React.FunctionComponent<IprojectDirectoryLayoutProps> = ({children}) => {
-  return (
+  return ( 
+    <>
+    <Header/>
+  
     <section 
     style={{
       backgroundColor: "#111827"
 
     }}
     >
-        <Header/>
+        
 
         {children}
-    </section>
+    </section>  
+    </> 
   );
 };
 
