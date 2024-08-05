@@ -1,4 +1,5 @@
 import SubHeader from "@/components/applelandingpage/SubHeader";
+import Banner from "@/components/applelandingpage/header/Banner";
 import Header from "@/components/applelandingpage/header/Header";
 
 
@@ -11,6 +12,7 @@ const AppleCloneLayout: React.FunctionComponent<IprojectDirectoryLayoutProps> = 
     <>
     <Header />
     <SubHeader/>
+    <Banner />
     <section 
     style={{
       backgroundColor: "#ffffff"

@@ -18,6 +18,10 @@ const LinkWrapper = styled.div`
   display:flex;
 `;
 
+const ApplyButton = styled.div`
+  
+`;
+
 const linkArray = ['Overview', 'Features', 'Family', 'Monthly Installments', 'How-To Videos']
 
 
@@ -31,6 +35,8 @@ const SubHeader: React.FunctionComponent<ISubHeaderProps> = (props) => {
                 {ele}
             </div>)}
         </LinkWrapper>
+
+        <ApplyButton>Apply Button</ApplyButton>
     </Container>
   );
 };

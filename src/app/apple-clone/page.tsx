@@ -1,4 +1,5 @@
 'use client'
+import Intro from '@/components/applelandingpage/intro/Intro';
 import * as React from 'react';
 import styled from 'styled-components';
 interface IPageProps {
@@ -13,7 +14,7 @@ const Page: React.FunctionComponent<IPageProps> = (props) => {
   return (
     <Container>
        
-    APPLE CLONE
+    <Intro/>
     </Container>
   );
 };
