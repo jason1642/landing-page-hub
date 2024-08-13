@@ -8,6 +8,9 @@ const Container = styled.div`
   display:flex;
   background-color: white;
   color: black;
+  padding: 1rem;
+  justify-content: space-around;
+  align-content: space-between;
 `;
 
 const Title = styled.h1`
@@ -16,6 +19,11 @@ const Title = styled.h1`
 
 const LinkWrapper = styled.div`
   display:flex;
+
+`;
+const Item = styled.div`
+  display: flex;
+  padding: .5rem;
 `;
 
 const ApplyButton = styled.div`
@@ -31,12 +39,13 @@ const SubHeader: React.FunctionComponent<ISubHeaderProps> = (props) => {
         <Title>Apple Card</Title>
 
         <LinkWrapper>
-            {linkArray.map(ele=><div key={ele}>
+            {linkArray.map(ele=>
+            <Item key={ele}>
                 {ele}
-            </div>)}
+            </Item>)}
         </LinkWrapper>
 
-        <ApplyButton>Apply Button</ApplyButton>
+        <ApplyButton>Apply Now</ApplyButton>
     </Container>
   );
 };
